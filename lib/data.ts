@@ -2,6 +2,14 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+
+import homescreenImg from "@/public/home-screen.png";
+import homescreenImg2 from "@/public/home-screen2.png";
+
+import gcloudscreenImg from "@/public/gcloud-screen.png";
+
+import clusterscreenImg from "@/public/cluster-page.png";
+
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -16,16 +24,12 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: "How To Use",
+    hash: "#howtouse",
   },
   {
-    name: "Skills",
+    name: "Tech",
     hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",
@@ -62,46 +66,32 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Select Local or Cloud Deployment",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "We offer MiniKube (local) or GKE (cloud) based deploymwent.",
+    tags: ["MiniKube", "GKE" ],
+    imageUrl: homescreenImg2,
   },
   {
-    title: "rmtDev",
+    title: "Install Dependencies",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Depending on your deployment type, you'll need to install certain dependencies.",
+    tags: [],
+    imageUrl: gcloudscreenImg,
   },
   {
-    title: "Word Analytics",
+    title: "Select Your Cluster and Deploy",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Pull your K8s cluster from your local computer or Google Cloud account and begin deploying!.",
+    tags: [],
+    imageUrl: clusterscreenImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Tailwind/MaterialUI",
+  "Google Kubernetes Engine"
 ] as const;
