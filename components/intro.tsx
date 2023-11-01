@@ -36,7 +36,7 @@ export default function Intro() {
           >
             <Image
               src={newK8egg}
-              alt="Ricardo portrait"
+              alt="InKubator"
               width="192"
               height="192"
               quality="95"
